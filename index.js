@@ -1,7 +1,11 @@
 const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
 const qrcode = require("qrcode-terminal");
-const fs = require("fs");
 const config = require("./config.json");
+const { handleCommand } = require("./commands");
+const { checkStatus } = require("./statusHandler");
+const { downloadMedia } = require("./mediaDownloader");
+const { aiChat } = require("./aiHandler");
+const { handleGroup } = require("./groupHandler");
 
 async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState("./auth_info_baileys");
@@ -11,15 +15,9 @@ async function startBot() {
     });
 
     sock.ev.on("creds.update", saveCreds);
-
-    sock.ev.on("connection.update", (update) => {
-        const { connection, lastDisconnect } = update;
-        if (connection === "close") {
-            console.log("Connection closed, reconnecting...");
-            startBot();
-        } else if (connection === "open") {
-            console.log("Bot Connected!");
-        }
+    sock.ev.on("connection.update", update => {
+        if (update.connection === "open") console.log("Bot Connected!");
+        else if (update.connection === "close") startBot();
     });
 
     sock.ev.on("messages.upsert", async ({ messages }) => {
@@ -28,15 +26,23 @@ async function startBot() {
 
         const sender = msg.key.remoteJid;
         const messageType = Object.keys(msg.message)[0];
-        const text = msg.message.conversation || msg.message[messageType]?.text;
+        const text = msg.message.conversation || msg.message[messageType]?.text || "";
 
-        console.log(`Received message: ${text} from ${sender}`);
+        console.log(`Message: ${text} from ${sender}`);
 
-        if (text === `${config.prefix}ping`) {
-            await sock.sendMessage(sender, { text: "Pong! ✅" });
-        } else if (text === `${config.prefix}status`) {
-            await sock.sendMessage(sender, { text: "I'm online! 🚀" });
+        if (text.startsWith(config.prefix)) {
+            await handleCommand(sock, sender, text);
+        } else if (text.toLowerCase().includes("dinu")) {
+            await sock.sendMessage(sender, { text: "ඔයා මට කතා කළාද? 😃" });
         }
+    });
+
+    sock.ev.on("status.update", async (status) => {
+        await checkStatus(sock, status);
+    });
+
+    sock.ev.on("group-participants.update", async (groupUpdate) => {
+        await handleGroup(sock, groupUpdate);
     });
 }
 
