@@ -1,12 +1,12 @@
 <div align="center">
 
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＱＵＥＥＮ+ＥＳＨＵ+ＭＤ+Ｖ1;ＭＵＬＴＩ+ＤＥＶＩＣＥ+ＷＨＡＴＳＡＰＰ+ＢＯT+;ＣＲＥＡＴＥ+ＢＹ+ＳＬ+ＥＳＨＡＮ+ＴＥＣＨ)](https://git.io/typing-svg)
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＱＵＥＥＮ+ＥＳＨＵ+ＭＤ+Ｖ1;ＭＵＬＴＩ+ＤＥＶＩＣＥ+ＷＨＡＴＳＡＰＰ+ＢＯT+;ＣＲＥＡＴＥ+BY+CYBER+DINU+ID)](https://git.io/typing-svg)
  
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
 <p align="center">
 <a href="https://github.com/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1">
-    <img src="https://i.ibb.co/TgGwnns/20241214-065324.jpg"  width="700px">
+    <img src="https://i.ibb.co/dJPR3mss/4fee3389898c57cf.jpg"  width="700px">
 </a> </p>
 </div>
  
