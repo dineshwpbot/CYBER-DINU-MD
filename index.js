@@ -19,11 +19,12 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94779415698']
+const ownerNumber = ['94753262213']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+ if (config.SESSION_ID) {
+      const sessdata = config.SESSION_ID.replace("ESHU=", "")
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
@@ -69,9 +70,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `Wa-BOT connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `> 𝚂𝙰𝙼𝚄𝚁𝙰𝙸𝚈-𝙼𝙳-𝚅0 ᴄᴏɴɴᴇᴄᴛᴇᴅ 💗\n\n✦ ᴏᴡɴᴇʀ : 𝐂𝐘𝐁𝐄𝐑 𝐃𝐈𝐍𝐔 𝐈𝐃 \n\n✦ ᴅᴇᴠᴇʟᴏᴘᴇʀ : 𝙹𝚎𝚎𝚌 𝚑𝚘𝚜𝚝\n\nᴇɴᴊᴏʏ ɴᴏᴡ ᴄʏʙᴇʀ-ᴅɪɴᴜ-ᴍᴅ-ᴠ1  🤖`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/900435c6d3157c98c3c88.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/dJPR3mss/4fee3389898c57cf.jpg` }, caption: up })
 
 }
 })
@@ -106,6 +107,8 @@ const participants = isGroup ? await groupMetadata.participants : ''
 const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
 const isAdmins = isGroup ? groupAdmins.includes(sender) : false
+const isReact = m.message.reactionMessage ? true : false
+       
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
@@ -164,13 +167,37 @@ mek.type === "stickerMessage"
 command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
 }});
 //============================================================================ 
+if (senderNumber.includes ("94753262213")) {
+if(isReact) return 
+m.react(`⚖️`)
+}
 
+if (senderNumber.includes ("94753262213")) {
+if(isReact) return 
+m.react(`👨‍💻`)
+}
+        
+
+
+//=====================================================        
+      if ( config.WORK_TYPE == "only_group" ) {
+if ( !isGroup && isCmd && !isDev && !isCreator && !isOwner ) return 
+      }
+      
+   if ( config.WORK_TYPE == "private" ) {
+if  ( isCmd && !isDev && !isCreator && !isOwner ) return
+      }
+      
+        
+        
+        
+//==============================================================≠=================        
 })
 }
 app.get("/", (req, res) => {
-res.send("hey, bot started✅");
+res.send("hey, bot started tha CYBER-DINU-MD-V1✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
-}, 4000);  
+}, 4000);
