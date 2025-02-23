@@ -1,11 +1,11 @@
 <div align="center">
 
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=ＱＵＥＥＮ+ＥＳＨＵ+ＭＤ+Ｖ1;ＭＵＬＴＩ+ＤＥＶＩＣＥ+ＷＨＡＴＳＡＰＰ+ＢＯT+;ＣＲＥＡＴＥ+BY+CYBER+DINU+ID)](https://git.io/typing-svg)
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F01&lines=CYBER+DINU+ＭＤ+Ｖ1;ＭＵＬＴＩ+ＤＥＶＩＣＥ+ＷＨＡＴＳＡＰＰ+ＢＯT+;ＣＲＥＡＴＥ+BY+CYBER+DINU+ID)](https://git.io/typing-svg)
  
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
 <p align="center">
-<a href="https://github.com/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1">
+<a href="https://github.com/BLACKY-X-MD/CYBER-DINU-MD">
     <img src="https://i.ibb.co/dJPR3mss/4fee3389898c57cf.jpg"  width="700px">
 </a> </p>
 </div>
@@ -14,7 +14,7 @@
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-ESHAN-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ESHAN-QUEEN-ESHU-MD/followers"><img title="Followers" src="https://img.shields.io/github/followers/ESHAN-QUEEN-ESHU-MD?color=red&style=flat-square"></a>
+<a href="https://github.com/BLACKY-X-MD/followers"><img title="Followers" src="https://img.shields.io/github/followers/ESHAN-QUEEN-ESHU-MD?color=red&style=flat-square"></a>
 <a href="https://github.com/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1?color=blue&style=flat-square"></a>
 <a href="https://github.com/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1/network/members"><img title="Forks" src="https://img.shields.io/github/forks/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1?color=red&style=flat-square"></a>
 <a href="https://github.com/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ESHAN-QUEEN-ESHU-MD/QUEEN-ESHU-MD-V1?label=Watchers&color=blue&style=flat-square"></a>
